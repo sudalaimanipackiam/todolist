@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+
+.bg{
+    background: #2c3e50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+    </style>
+
+
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+          
+          
+           // alert("Value: " + $("#test").val());
+            var newName = $("#mname").val();
+            var newUsername=$("#uname").val();
+            var newDesignationname=$("#dName").val();
+            
+        //    alert(newData);
+            
+            $("#demo").html("<br><b>You have entered </b>"+newName+newUsername+"<br>"+newDesignationname);
+            
+            
+        //
+        
+        });
+        });
+        </script>
+        </head>
+        <body class="bg">
+            <div style="text-align: center;">
+        <form>
+        <p>Name: <input type="text" id="mname" value=""></p>
+        <p>userName: <input type="text" id="uname" value=""></p>
+        <p>Designationname: <input type="text" id="dName" value=""></p>
+
+        
+        
+        
+        <button>Show Value</button>
+        <br>
+    </form>
+    </div>
+        <div id="demo"></div>
+
+
+        
+</body>
+</html>
